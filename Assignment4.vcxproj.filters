@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="tool">
+      <UniqueIdentifier>{0b2312a8-31fe-40f4-949f-9fb6148d356a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BookLib">
+      <UniqueIdentifier>{44d48886-ec4a-4c33-b35c-07ba419a2a42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tool\pch">
+      <UniqueIdentifier>{7cdba660-2e79-4162-8433-7c602c3f4757}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App">
+      <UniqueIdentifier>{62eceebb-0234-4e93-bd96-16a206d97683}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App\Time">
+      <UniqueIdentifier>{aaffdcf1-915f-42a8-b939-e437d35f97c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App\ImGui">
+      <UniqueIdentifier>{25c97578-9b9b-4ca6-816e-cdd8d53c0dab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App\ImGui\Source">
+      <UniqueIdentifier>{d19a321b-86ec-461f-ab7d-37cae0845b28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App\ImGui\Resource">
+      <UniqueIdentifier>{d7cfc123-b913-4c5d-9895-c8c5da904854}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App\Render">
+      <UniqueIdentifier>{15026d28-86ed-49fb-8a69-c50dd6cf4316}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App\Render\Console">
+      <UniqueIdentifier>{b16ea825-55a1-4416-8fc0-8f98bd8876df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App\Key">
+      <UniqueIdentifier>{1bec831c-d037-46f8-953d-6c4fbf066f31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App\Render\Console\Menu">
+      <UniqueIdentifier>{d0c0bf7b-5afb-4409-9bc2-7a8eafadce8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App\Render\Console\BookViewr">
+      <UniqueIdentifier>{90f733dd-e7bc-4a8f-83d6-f49d913d1c17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App\Render\Console\Borrow">
+      <UniqueIdentifier>{73c8dd10-8849-4810-9054-d23f581b4b12}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>tool\pch</Filter>
+    </ClInclude>
+    <ClInclude Include="BookContainer.h">
+      <Filter>BookLib</Filter>
+    </ClInclude>
+    <ClInclude Include="BorrowManager.h">
+      <Filter>BookLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Book.h">
+      <Filter>BookLib</Filter>
+    </ClInclude>
+    <ClInclude Include="BookManager.h">
+      <Filter>BookLib</Filter>
+    </ClInclude>
+    <ClInclude Include="App.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>App\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeManager.h">
+      <Filter>App\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_impl_win32.h">
+      <Filter>App\ImGui\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_impl_dx11.h">
+      <Filter>App\ImGui\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui.h">
+      <Filter>App\ImGui\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_internal.h">
+      <Filter>App\ImGui\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_rectpack.h">
+      <Filter>App\ImGui\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_textedit.h">
+      <Filter>App\ImGui\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_truetype.h">
+      <Filter>App\ImGui\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="imconfig.h">
+      <Filter>App\ImGui\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleRender.h">
+      <Filter>App\Render\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleObject.h">
+      <Filter>App\Render\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleMenu.h">
+      <Filter>App\Render\Console\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="CKeyMgr.h">
+      <Filter>App\Key</Filter>
+    </ClInclude>
+    <ClInclude Include="Macro.h">
+      <Filter>tool</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>tool</Filter>
+    </ClInclude>
+    <ClInclude Include="define.h">
+      <Filter>tool</Filter>
+    </ClInclude>
+    <ClInclude Include="BookViewer.h">
+      <Filter>App\Render\Console\BookViewr</Filter>
+    </ClInclude>
+    <ClInclude Include="Borrow.h">
+      <Filter>App\Render\Console\Borrow</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>tool\pch</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="BookContainer.cpp">
+      <Filter>BookLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Book.cpp">
+      <Filter>BookLib</Filter>
+    </ClCompile>
+    <ClCompile Include="BorrowManager.cpp">
+      <Filter>BookLib</Filter>
+    </ClCompile>
+    <ClCompile Include="BookManager.cpp">
+      <Filter>BookLib</Filter>
+    </ClCompile>
+    <ClCompile Include="App.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>App\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeManager.cpp">
+      <Filter>App\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_impl_dx11.cpp">
+      <Filter>App\ImGui\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_impl_win32.cpp">
+      <Filter>App\ImGui\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui.cpp">
+      <Filter>App\ImGui\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_demo.cpp">
+      <Filter>App\ImGui\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_draw.cpp">
+      <Filter>App\ImGui\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_tables.cpp">
+      <Filter>App\ImGui\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_widgets.cpp">
+      <Filter>App\ImGui\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleRender.cpp">
+      <Filter>App\Render\Console</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleObject.cpp">
+      <Filter>App\Render\Console</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleMenu.cpp">
+      <Filter>App\Render\Console\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="CKeyMgr.cpp">
+      <Filter>App\Key</Filter>
+    </ClCompile>
+    <ClCompile Include="Singleton.cpp">
+      <Filter>tool</Filter>
+    </ClCompile>
+    <ClCompile Include="BookViewer.cpp">
+      <Filter>App\Render\Console\BookViewr</Filter>
+    </ClCompile>
+    <ClCompile Include="Borrow.cpp">
+      <Filter>App\Render\Console\Borrow</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
