@@ -96,13 +96,17 @@ std::string CConsoleRender::InputText(const std::string& text)
     }
 
     configureConsoleForRawInput(hInput);
-    FlushConsoleInputBuffer(hInput);
+    
     char inputBuffer[256] = {};
     DWORD bytesRead;
     std::string inputText = "";
+    
+    FlushConsoleInputBuffer(hInput);
     PrintText(hOutput2, text);
     while (true) 
     {
+        FlushConsoleInputBuffer(hInput);
+        //Render(0.f);
         PrintText(hOutput2, inputBuffer);
         // Read input
         if (ReadFile(hInput, inputBuffer, sizeof(inputBuffer) - 1, &bytesRead, NULL)) {
@@ -113,6 +117,10 @@ std::string CConsoleRender::InputText(const std::string& text)
                 PrintText(hOutput2, "\n");
                 break;
             }
+            else if(strchr(inputBuffer, '\b'))
+            {
+                if (inputText.size() > 0) inputText.pop_back();
+            }
             else
                 inputText += std::string(inputBuffer);
         }
@@ -121,7 +129,16 @@ std::string CConsoleRender::InputText(const std::string& text)
             break;
         }
     }
-    return inputText;
+    static std::unordered_set<char> escapeChars = { '\r', '\b', '\f', '\n', '\t', '\\' };
+    std::string result;
+    for (size_t i = 0; i < inputText.size(); ++i)
+    {
+        if (!escapeChars.count(inputText[i])) 
+        {
+            result += inputText[i];
+        }
+    }
+    return result;
 }
 
 void CConsoleRender::configureConsoleForRawInput(HANDLE hInput)

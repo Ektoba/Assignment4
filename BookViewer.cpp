@@ -69,7 +69,7 @@ void CBookViewer::update(HANDLE hConsole)
 		size_t size = vecBook.size();
 		if (size == 0)
 		{
-			m_vecText.push_back("찾으시는 책이 없습니다.\n");
+			m_vecText.push_back("\'" + title + "\'" + "찾으시는 책이 없습니다.\n");
 		}
 		for (size_t i = 0; i < size; ++i)
 		{

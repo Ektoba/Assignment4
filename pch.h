@@ -15,7 +15,7 @@
 #include <stdlib.h>
 #include <crtdbg.h>
 #include <sstream>
-
+#include <unordered_set>
 #include "Macro.h"
 #include "Singleton.h"
 #include "define.h"

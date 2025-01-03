@@ -22,7 +22,10 @@ std::vector<CBook*> CBookContainer::findBookByTitle(const std::string& title)
     std::vector<CBook*> vecBook;
     for (auto iter = m_vecBook.begin(); iter != iter_end; ++iter)
     {
-        if ((*iter).get()->getTitle() == title)
+        std::string strTitle = (*iter).get()->getTitle();
+
+
+        if (strTitle.find(title.c_str()) != std::string::npos)
         {
             CBook* book = (*iter).get();
             vecBook.push_back(book);
